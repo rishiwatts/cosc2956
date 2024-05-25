@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en"
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name ="viewport" content ="width=device.width, initial scale =1.0"/>
+        <title> CSS Grid Example</title>
+        <link rel="stylesheet" href="./css/nav.css" />
+        <link rel="stylesheet" href="./css/grid.css" />
+    
+        <style>        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .navbar {
+            display: flex;
+            justify-content: space-between; /* pushing the elements as far apart as possible */
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+          }
+          .navbar ul {
+  display: flex;
+  list-style: none;
+  /* no number, no dot */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-right: 15px;  /* spacing */
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none; /* no underline */
+}
+.grid-container {
+        display: grid;
+        /* block-level */
+        grid-template-columns: 1fr 2fr 1fr; 
+        /* Three columns with the middle one twice as wide as the others */
+        grid-template-rows: 100px 300px; 
+        /* Two rows with different heights */
+        gap: 5px; 
+        /* Space between rows and columns */
+      }
+      .grid-item {
+        background-color: #8ca1a5;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+}
+/* Style for merged items */
+.grid-item-5 {
+        grid-column: 2 / 4; 
+        /* Span from the second column to the end */
+        grid-row: 2; 
+        /* Position at the second row */
+}
+
+.item1-4 {
+        grid-column: 1;
+        grid-row: 1 / 3; 
+         /* Spanning from first to second row */
+      }
+      .item2 {
+        grid-column: 2;
+        grid-row: 1;
+      } /* First row, second column */
+      .item3 {
+        grid-column: 3;
+        grid-row: 1;
+      } /* First row, third column */
+      .item5-6 {
+        grid-column: 2 / 4; 
+        /* Spanning second and third columns */
+        grid-row: 2;
+      }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="navbar">
+          <div class="left-section">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="right-section">
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+          </div>
+      
+    </body>
+    
+     
+</html>
