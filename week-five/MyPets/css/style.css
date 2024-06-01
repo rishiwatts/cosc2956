@@ -1,0 +1,11 @@
+.picture-size {
+  width: 200x;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .discussion-menu {
+    justify-content: center !important;
+  }
+}
