@@ -1,0 +1,39 @@
+body {
+  background-color: #2b2b2b;
+  color: #dcdcdc;
+}
+.container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+.input-box {
+  font-size: large;
+  width: 100%;
+}
+.result-screen {
+  background-color: #332703;
+  height: 100%;
+  color: white;
+  padding: 10px;
+}
+.row-equal > .col {
+  display: flex;
+  align-items: center;
+}
+.row-equal {
+  margin-bottom: 10px;
+}
+.btn-primary {
+  background-color: #444;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #555;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #ccc;
+  background-color: rgb(116, 83, 83);
+}

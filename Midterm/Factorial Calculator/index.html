@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Rishabh Watts</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <script src="./js/darkmodetoggle.js"></script>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/factorial.js"></script>
+
+  <header
+    style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #555;
+    "
+  >
+    <nav style="flex: 1">
+      <a
+        href="#"
+        style="color: #ff5c5c; margin-right: 15px; text-decoration: none"
+        >HTML5</a
+      >
+      <a
+        href="#"
+        style="color: #ff5c5c; margin-right: 15px; text-decoration: none"
+        >JavaScript</a
+      >
+      <a href="#" style="color: #ff5c5c; text-decoration: none">Bootstrap</a>
+    </nav>
+    <div style="flex-shrink: 0">
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">
+          Dark
+        </button>
+        <button class="btn btn-light btn-sm" data-bs-theme-value="light">
+          Light
+        </button>
+        <button class="btn btn-light btn-sm">Contact Me</button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="container mt-5">
+      <div class="row row-equal">
+        <div class="col-2">
+          <p >
+  <pre style="color: blue; font-family: 'Times New Roman', Times, serif;">Factorial calculator. 
+
+n! = 1x2x3 ... xn. 
+
+e.g. 5! = 120.
+            </pre>
+          </p>
+        </div>
+        <div class="col-10">
+          <input
+          style="font-size: large;"
+            type="number"
+            id="numberInput"
+            class="form-control input-box"
+            placeholder="Enter a number"
+            
+          />
+        </div>
+      </div>
+      <div class="row row-equal">
+        <div class="col-2 text-right">
+          <button class="btn btn-primary" onclick="fact()">Enter</button>
+        </div>
+        <div class="col-10">
+          <div id="resultScreen" class="result-screen"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>Simple factorial calculator © 2024</footer>
+</html>
