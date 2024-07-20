@@ -2,6 +2,7 @@
 $title="Sign Up";
 require_once './includes/header.php'; 
 require_once './includes/session_start.php'; ?>
+<title>Sign Up</title>
 <body>
 <main>
 
