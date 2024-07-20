@@ -13,6 +13,7 @@ require_once './includes/header.php';  ?>
             }
         };
     </script>
+<title>Login</title>
 <body>
 <main>
 
