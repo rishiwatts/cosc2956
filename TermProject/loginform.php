@@ -9,10 +9,11 @@ require_once './includes/header.php';  ?>
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('error')) {
-                alert('Password was wrong. Please try again.');
+                alert('Wrong Credentials. Please try again.');
             }
         };
     </script>
+<title>Login</title>
 <body>
 <main>
 

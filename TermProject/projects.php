@@ -11,6 +11,7 @@ if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] !== true) {
 $title="Projects";
 require_once './includes/header.php'; 
 require_once './includes/session_start.php'; ?>
+<title>Projects</title>
 <body>
 <main>
 

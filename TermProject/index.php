@@ -6,6 +6,7 @@ require_once './includes/session_start.php';
 $title="Home Page";
 require_once './includes/header.php';
 ?>
+<title>Home </title>
       <body>
       <main>
       <div class="container-fluid"style="padding-bottom:0px;">

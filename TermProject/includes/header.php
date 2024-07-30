@@ -11,7 +11,7 @@ $loggedIn = isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true;
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <title>Portfolio</title>
+
 </head>
 <body>
     <header class="fixed-top">
